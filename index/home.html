@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script language="javascript" type="text/javascript">
+		var timerid = 0;
+		var images = new Array(	"../images/image1.jpg",
+					"../images/image2.jpg",
+					"../images/image3.jpg");
+		var countimages = 0;
+		function startTime()
+		{
+			if(timerid)
+			{
+				timerid = 0;
+			}
+			var tDate = new Date();
+			
+			if(countimages == images.length)
+			{
+				countimages = 0;
+			}
+			if(tDate.getSeconds() % 5 == 0)
+			{
+				document.getElementById("img1").src = images[countimages];
+			}
+			countimages++;
+			
+			timerid = setTimeout("startTime()", 1000);
+		}
+		</script>
+</head>
+<body  onload="startTime();">
+<header>
+	<img class="header-image" src="../images/kensacco.png">
+	 <div class="top-right">
+		 <a href="login.php">Login</a>&nbsp &nbsp
+		 <a href="register.php">Register</a>
+	</div>
+	 
+	
+	</header>
+   <div id="wrap">
+		  <ul class="navbar">
+		 
+	 		 <li><a href="home.html">Home</a></li>
+	 		 <li><a href="#">Services <i class="fa fa-caret-down"></i></a>
+				<ul>
+				   <li><a href="loan-issuance.html">Loan Issuance</a></li>
+				   <li><a href="deposit.html">Deposits and Savings</a></li>
+				   
+				</ul>         
+			 </li>
+			 <li><a href="contact-us.php">Contact Us</a>
+				         
+			 </li>
+			 <li><a href="#">Loans  <i class="fa fa-caret-down"></i></a>
+
+				<ul>
+				   <li><a href="apply-loan.php">Apply for a loan</a></li>
+				   <li><a href="bosa.html">BOSA Loans</a></li>
+				   <li><a href="fosa.html">FOSA Loans</a></li>
+				   <li><a href="loancalc.php">Loan Calculator</a></li>
+				  
+				   
+				   
+				</ul>         
+			 </li>
+			 <li><a href="aboutUs.html">About Us</a>
+				<li><a href="#">Support <i class="fa fa-caret-down"></i></a>
+				<ul>
+				   <li><a href="downloads.php">Downloads</a></li>
+				   <li><a href="news.html">News</a></li>
+				   <li><a href="contact-us.php">Contact Information</a></li>
+				  
+				  
+				   
+				   
+				</ul>         
+			 </li>
+			 	 <li><a href="faq.html">FAQs</a></li>
+			 <li><a href="login.php">Login</a></li>
+			 <li><a href="register.php">Register</a></li>
+		   
+</div>
+<div   class="slide-images" >
+	<img id="img1" src="../images/image3.jpg" />
+	</div >
+	<div class="content">
+		<div class="introduction">
+			<h1>Introduction</h1>
+	       <p style="padding-left:5px;">Kenversity Co-operative Savings and Credit Society Limited was registered as a Savings and Credit Cooperative Society in 1976. Originally membership was drawn from Kenyatta University but now it has opened up its common bond to attract; recruit and retain satisfied customers from all sectors throughout East Africa and the Diaspora. Kenversity Sacco is now one of the deposit-taking Saccos in Kenya, licensed and regulated by SASRA ( Sacco Socities Regulatory Authority).</p>
+		</div>
+		<div class="services">
+			<h2 style="font-size: 30px; font-style: bold; ">Services</h2>
+			<p  style="padding-left:5px;">At Kenversity SACCO,our main services are our members making deposits/savings and issuing loans to members.Members are able to make their savings and earn interest and the end of a fixed number of months. Loans are also issued at an affordable interest rate.</p>
+			<p style="padding-left:5px;">Below are our main two services;</p>
+			<a style="text-align:center; font-size:20px; padding-left:10px;" href="bosa.html">BOSA Services</a><br>
+			<a style="text-align:center; font-size:20px; padding-left:10px;" href="fosa.html">FOSA Servicess</a>
+		</div>
+		<div class="membership">
+				<h2 style="font-size: 30px; font-style: bold;">Membership</h2>
+				<p style="padding-left:5px;">The membership registration fee is KES 500.
+				For one to become a member,he/she has three options;<br>
+				1.To fill all the details online<br><br>
+				2.To visit the SACCO premises at Kahawa Sukari and be provide with the form to manual fill it and hand it ove to the staff<br><br>
+				3.Download the membership form from our site,fill it, scan it and send it via email.<br><br>
+				</p>
+				<a style="text-align:center; font-size:20px; padding-left:10px;" href="register.php">Apply to be a member</a>
+		</div>
+	
+	</div>
+	
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kenversity&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style><small><a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=28532&url=42158&tid1=google3" rel="nofollow">Build WordPress Themes faster</a></small></div>
+	<footer >
+
+		<div style="float:left; margin-left:50px; ">
+			<h2 style="color:blue; font-style:bold;">Services</h2>
+			<a style="text-decoration: none;" href="loan-issuance.html">Loans</a><br>
+		
+			<a style="text-decoration: none;" href="loan-issuance.html">About Us</a><br>
+		
+			<a style="text-decoration: none;" href="bosa.html">BOSA Products</a><br>
+		
+			<a style="text-decoration: none;" href="fosa.html">FOSA Products</a><br>
+		</div>
+		
+<div style="float:left; margin-left:100px;">
+<h2 style="color:blue; font-style:bold;">Contact Details</h2>
+E-Mail Us:<a href="mailto:kevinkorobosta@gmail.com">info@kenversitysacco.co.ke  </a><br><br>
+Call Us: 0715 114454<br><br>
+Address: P.O.BOX 10263-00100 NAIROBI,KENYA. <br><br>
+	</div>
+<div style="float:left; margin-left:100px;">
+<h2 style="color:blue; font-style:bold;">We are also in social media</h2>
+<a target="_blank" title="follow me on twitter" href="https://twitter.com/korokevin"><img  src="../images/twitter.png" border=0></a>
+<a target="_blank" title="find us on Facebook" href="http://www.facebook.com/kevin.korobosta.11"><img src="../images/facebook.png" border=0></a>
+
+</div>
+
+	</footer>
+</body>
+</html>
